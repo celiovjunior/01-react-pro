@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 export function Counter() {
-    let [] = useState(0)
+    const [counter, setCounter] = useState(0)
     
     function increment() {
-        counter++
+        setCounter(counter + 1)
         console.log("Função disparada")
     }
 
